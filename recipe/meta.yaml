@@ -1,7 +1,7 @@
 {%set name = "testtools" %}
-{%set version = "2.2.0" %}
+{%set version = "2.3.0" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "80f606607a6e4ce4d0e24e5b786562aa42c581906f3c070607a4265f3da65810" %}
+{%set hash_val = "5827ec6cf8233e0f29f51025addd713ca010061204fdea77484a2934690a0559" %}
 
 package:
   name: {{ name }}
