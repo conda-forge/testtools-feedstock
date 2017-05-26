@@ -1,19 +1,21 @@
-{%set name = "testtools" %}
-{%set version = "2.3.0" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "5827ec6cf8233e0f29f51025addd713ca010061204fdea77484a2934690a0559" %}
+{% set name = "testtools" %}
+{% set version = "2.3.0" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "5827ec6cf8233e0f29f51025addd713ca010061204fdea77484a2934690a0559" %}
+{% set bundle = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -32,8 +34,8 @@ test:
 
 about:
   home: https://github.com/testing-cabal/testtools
-  license: MIT
   license_file: LICENSE
+  license: MIT
   license_family: MIT
   summary: 'Extensions to the Python standard library unit testing framework'
   dev_url: https://github.com/testing-cabal/testtools
