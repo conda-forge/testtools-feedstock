@@ -1,11 +1,11 @@
-About testtools
-===============
+About testtools-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/testtools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/testing-cabal/testtools
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/testtools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extensions to the Python standard library unit testing framework
 
