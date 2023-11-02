@@ -20,7 +20,7 @@ requirements:
     - python >=3.7
     - setuptools >=61
     - hatchling
-    - hatch_vcs
+    - hatch-vcs
   run:
     - python >=3.7
 
