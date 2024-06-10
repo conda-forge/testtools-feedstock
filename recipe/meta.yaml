@@ -1,5 +1,5 @@
 {% set name = "testtools" %}
-{% set version = "2.7.1" %}
+{% set version = "2.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/testtools-{{ version }}.tar.gz
-  sha256: df6de96010e29ee21f637a147eabf30d50b25e3841dd1d68f93ee89ce77e366c
+  sha256: 5be5bbc1f0fa0f8b60aca6ceec07845d41d0c475cf445bfadb4d2c45ec397ea3
 
 build:
   noarch: python
