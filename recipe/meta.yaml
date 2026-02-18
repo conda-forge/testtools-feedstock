@@ -1,5 +1,6 @@
 {% set name = "testtools" %}
 {% set version = "2.8.3" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
