@@ -1,6 +1,5 @@
 {% set name = "testtools" %}
 {% set version = "2.8.3" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -24,6 +23,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
+    - typing_extensions
 
 test:
   imports:
