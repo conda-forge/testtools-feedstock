@@ -1,5 +1,5 @@
 {% set name = "testtools" %}
-{% set version = "2.8.2" %}
+{% set version = "2.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/testtools-{{ version }}.tar.gz
-  sha256: b5c73332456ff54152062d47a58bc4f15f8e23514afec4e84775af124fb7db43
+  sha256: 3b54b543a7583a35f65538b1d36a327fc34943a26bb839bcbe4b2c5e085aa939
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
+    - typing_extensions
 
 test:
   imports:
